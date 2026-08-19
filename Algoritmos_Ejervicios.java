@@ -790,3 +790,37 @@ public class Algoritmos_Ejercicios {
     }
 }
 
+// Ejercicio 19 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DE LA FÓRMULA A = 2 * x^2 * y^3 * z ---");
+
+        // Solicitamos los valores de x, y, z //
+        System.out.print("Ingrese el valor de x: ");
+        double x = lector.nextDouble();
+
+        System.out.print("Ingrese el valor de y: ");
+        double y = lector.nextDouble();
+
+        System.out.print("Ingrese el valor de z: ");
+        double z = lector.nextDouble();
+
+        // Aplicamos la fórmula: A = 2 * (x^2) * (y^3) * z //
+        double resultadoA = 2 * Math.pow(x, 2) * Math.pow(y, 3) * z;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El valor de A es: " + resultadoA);
+
+        lector.close();
+    }
+}
+
