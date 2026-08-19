@@ -71,4 +71,68 @@ public class Algoritmos_Ejercicios {
         lector.close();
     }
     
+// Ejercicio 3 // 
 
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- SEPARAR DÍGITOS Y ELEVAR PRIMERO Y ÚLTIMO AL CUADRADO ---");
+
+        // Solicitamos al usuario el número entero de 5 dígitos //
+        System.out.print("Ingrese un número entero positivo de 5 dígitos: ");
+        int numero = lector.nextInt();
+
+        // Extraemos el primer dígito (dividiendo entre 10000) //
+        int primerDigito = numero / 10000;
+
+        // Extraemos el último dígito (usando el residuo de 10) //
+        int ultimoDigito = numero % 10;
+
+        // Elevamos al cuadrado el primer y el último dígito //
+        int primerAlCuadrado = primerDigito * primerDigito;
+        int ultimoAlCuadrado = ultimoDigito * ultimoDigito;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El primer dígito es: " + primerDigito + " | Elevado al cuadrado es: " + primerAlCuadrado);
+        System.out.println("El último dígito es: " + ultimoDigito + " | Elevado al cuadrado es: " + ultimoAlCuadrado);
+
+        lector.close();
+    }
+}
+
+
+// Ejercicio 4 //
+
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CONVERSIÓN DE DÉCADAS A DÍAS ---");
+
+        // Solicitamos al usuario la cantidad de décadas //
+        System.out.print("Ingrese la cantidad de décadas: ");
+        double decadas = lector.nextDouble();
+
+        // Aplicamos la fórmula: 1 década = 10 años, 1 año = 365 días //
+        double dias = decadas * 10 * 365;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println(decadas + " década(s) equivalen a: " + dias + " días.");
+
+        lector.close();
+    }
+}
