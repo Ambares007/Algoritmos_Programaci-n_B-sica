@@ -531,20 +531,17 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
-
-        System.out.println("--- OBTENER ÚLTIMA CIFRA DE UN NÚMERO ---");
 
         // Solicitamos el número entero //
         System.out.print("Ingrese un número entero: ");
         int numero = lector.nextInt();
 
         // El operador módulo % 10 nos da siempre la última cifra //
-        int ultimaCifra = Math.abs(numero) % 10;
+        int ultimaCifra = numero % 10;
 
-        System.out.println("\n--- RESULTADO ---");
         System.out.println("La última cifra del número es: " + ultimaCifra);
 
         lector.close();
