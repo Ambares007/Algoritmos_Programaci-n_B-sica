@@ -300,23 +300,20 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CÁLCULO DEL ÁREA DE UN TRIÁNGULO ---");
-
         // Solicitamos la base y la altura //
-        System.out.print("Ingrese la base del triángulo: ");
+        System.out.print("Base del triángulo: ");
         double base = lector.nextDouble();
 
-        System.out.print("Ingrese la altura del triángulo: ");
+        System.out.print("Altura del triángulo: ");
         double altura = lector.nextDouble();
 
         // Aplicamos la fórmula: Área = (base * altura) / 2 //
         double area = (base * altura) / 2;
 
-        System.out.println("\n--- RESULTADO ---");
         System.out.println("El área del triángulo es: " + area);
 
         lector.close();
