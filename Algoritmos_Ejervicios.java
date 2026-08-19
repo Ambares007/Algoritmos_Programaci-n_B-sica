@@ -759,3 +759,34 @@ public class Algoritmos_Ejercicios {
     }
 }
 
+
+// Ejercicio 18 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DE PERÍMETRO Y ÁREA DE UN CUADRADO ---");
+
+        // Solicitamos la longitud del lado del cuadrado //
+        System.out.print("Ingrese el valor del lado (a): ");
+        double ladoA = lector.nextDouble();
+
+        // Aplicamos las fórmulas: P = 4 * a y A = a^2 //
+        double perimetro = 4 * ladoA;
+        double area = Math.pow(ladoA, 2);
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El perímetro del cuadrado es: " + perimetro);
+        System.out.println("El área del cuadrado es: " + area);
+
+        lector.close();
+    }
+}
+
