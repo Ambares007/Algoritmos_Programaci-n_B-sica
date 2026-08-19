@@ -387,3 +387,194 @@ public class Algoritmos_Ejercicios {
     }
 }
 
+// Ejercicio 6 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CONVERSIÓN DE CELSIUS A FAHRENHEIT ---");
+
+        // Solicitamos los grados Celsius //
+        System.out.print("Ingrese los grados Celsius: ");
+        double celsius = lector.nextDouble();
+
+        // Aplicamos la fórmula: Fahrenheit = (Celsius * 9/5) + 32 //
+        double fahrenheit = (celsius * 9 / 5) + 32;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println(celsius + " °C equivalen a: " + fahrenheit + " °F");
+
+        lector.close();
+    }
+}
+
+// Ejercicio 7 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CONVERSIÓN DE FAHRENHEIT A CELSIUS ---");
+
+        // Solicitamos los grados Fahrenheit //
+        System.out.print("Ingrese los grados Fahrenheit: ");
+        double fahrenheit = lector.nextDouble();
+
+        // Aplicamos la fórmula: Celsius = (Fahrenheit - 32) * 5 / 9 //
+        double celsius = (fahrenheit - 32) * 5 / 9;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println(fahrenheit + " °F equivalen a: " + celsius + " °C");
+
+        lector.close();
+    }
+}
+
+// Ejercicio 8 //
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CONVERSIÓN DE MILLAS MARINAS A METROS ---");
+
+        // Solicitamos la distancia en millas marinas //
+        System.out.print("Ingrese la distancia en millas marinas: ");
+        double millasMarinas = lector.nextDouble();
+
+        // Aplicamos la fórmula: Metros = Millas Marinas * 1852 //
+        double metros = millasMarinas * 1852;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println(millasMarinas + " millas marinas equivalen a: " + metros + " metros.");
+
+        lector.close();
+    }
+}
+
+// Ejercicio 9 // 
+
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DE PORCENTAJE DE DESCUENTO ---");
+
+        // Solicitamos el precio original y el precio pagado //
+        System.out.print("Ingrese el precio original (tarifa): ");
+        double precioTarifa = lector.nextDouble();
+
+        System.out.print("Ingrese el precio final pagado: ");
+        double precioPagado = lector.nextDouble();
+
+        // Calculamos la diferencia del descuento y luego el porcentaje //
+        double descuentoDinero = precioTarifa - precioPagado;
+        double porcentajeDescuento = (descuentoDinero / precioTarifa) * 100;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El descuento aplicado fue del: " + porcentajeDescuento + "%");
+
+        lector.close();
+    }
+}
+
+// Ejercicio 10 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DEL VALOR DEL IVA ---");
+
+        // Solicitamos el precio del artículo //
+        System.out.print("Ingrese el precio del artículo: ");
+        double precio = lector.nextDouble();
+
+        // Calculamos el valor del IVA (19% = 0.19) //
+        double valorIva = precio * 0.19;
+
+        // Calculamos el precio total con IVA incluido //
+        double precioTotal = precio + valorIva;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El valor pagado solo por concepto de IVA (19%) es: $" + valorIva);
+        System.out.println("El precio total del artículo con IVA es: $" + precioTotal);
+
+        lector.close();
+    }
+}
+
+// Ejercicio 11 //
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- OPERACIONES ARITMÉTICAS BÁSICAS ---");
+
+        // Solicitamos los dos números enteros //
+        System.out.print("Ingrese el primer número entero: ");
+        int num1 = lector.nextInt();
+
+        System.out.print("Ingrese el segundo número entero: ");
+        int num2 = lector.nextInt();
+
+        // Calculamos las operaciones básicas //
+        int suma = num1 + num2;
+        int resta = num1 - num2;
+        int multiplicacion = num1 * num2;
+        
+        // Convertimos a double para obtener la división exacta //
+        double division = (double) num1 / num2; 
+        int modulo = num1 % num2;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("Suma: " + suma);
+        System.out.println("Resta: " + resta);
+        System.out.println("Multiplicación: " + multiplicacion);
+        System.out.println("División: " + division);
+        System.out.println("Módulo (Resto): " + modulo);
+
+        lector.close();
+    }
+}
+
+// Ejercicio 12 //
