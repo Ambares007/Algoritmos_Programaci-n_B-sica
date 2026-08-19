@@ -493,29 +493,26 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- OPERACIONES ARITMÉTICAS BÁSICAS ---");
-
         // Solicitamos los dos números enteros //
-        System.out.print("Ingrese el primer número entero: ");
+        System.out.print("Primer número entero: ");
         int num1 = lector.nextInt();
 
-        System.out.print("Ingrese el segundo número entero: ");
+        System.out.print("Segundo número entero: ");
         int num2 = lector.nextInt();
 
         // Calculamos las operaciones básicas //
         int suma = num1 + num2;
         int resta = num1 - num2;
         int multiplicacion = num1 * num2;
-        
+
         // Convertimos a double para obtener la división exacta //
-        double division = (double) num1 / num2; 
+        double division = (double) num1 / num2;
         int modulo = num1 % num2;
 
-        System.out.println("\n--- RESULTADO ---");
         System.out.println("Suma: " + suma);
         System.out.println("Resta: " + resta);
         System.out.println("Multiplicación: " + multiplicacion);
