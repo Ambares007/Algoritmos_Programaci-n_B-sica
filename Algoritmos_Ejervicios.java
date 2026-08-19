@@ -200,3 +200,80 @@ public class Algoritmos_Ejercicios {
         lector.close();
     }
 }
+
+
+
+// ------------------- EJERCICIOS DE LA ACTIVIDAD DE APRENDIZAJE ------------------- //
+
+
+// Ejercicio 1 //
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DE SALARIO Y RETENCIÓN (PROSEGUR) ---");
+
+        // Solicitamos el valor de la hora y las horas trabajadas //
+        System.out.print("Ingrese el valor de la hora: ");
+        double valorHora = lector.nextDouble();
+
+        System.out.print("Ingrese el número de horas trabajadas: ");
+        double horasTrabajadas = lector.nextDouble();
+
+        // Salario Total = Horas trabajadas * Valor por hora //
+        double salarioTotal = horasTrabajadas * valorHora;
+
+        // Retención en la fuente = 5% del salario total (0.05) //
+        double retencion = salarioTotal * 0.05;
+
+        // Salario Neto = Salario Total - Retención //
+        double salarioNeto = salarioTotal - retencion;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("Salario Total: $" + salarioTotal);
+        System.out.println("Retención en la fuente (5%): $" + retencion);
+        System.out.println("Salario Neto a pagar: $" + salarioNeto);
+
+        lector.close();
+    }
+}
+
+// Ejercicio 2 //
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DEL VALOR DE HORA TRABAJADA ---");
+
+        // Solicitamos el salario total mensual y las horas trabajadas //
+        System.out.print("Ingrese el salario total mensual: ");
+        double salarioTotal = lector.nextDouble();
+
+        System.out.print("Ingrese el número de horas trabajadas: ");
+        double horasTrabajadas = lector.nextDouble();
+
+        // Aplicamos la fórmula: Valor Hora = Salario Total / Horas Trabajadas //
+        double valorHora = salarioTotal / horasTrabajadas;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El valor de una hora trabajada es: $" + valorHora);
+
+        lector.close();
+    }
+}
+
+
