@@ -172,3 +172,31 @@ public class Algoritmos_Ejercicios {
         lector.close();
     }
 }
+
+// Ejercicio 6 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DE NÚMERO DE PULSACIONES ---");
+
+        // Solicitamos la edad de la persona //
+        System.out.print("Ingrese la edad de la persona: ");
+        int edad = lector.nextInt();
+
+        // Aplicamos la fórmula: num. pulsaciones = (220 - edad) / 10 //
+        double pulsaciones = (220.0 - edad) / 10.0;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El número de pulsaciones por cada 10 segundos es: " + pulsaciones);
+
+        lector.close();
+    }
+}
