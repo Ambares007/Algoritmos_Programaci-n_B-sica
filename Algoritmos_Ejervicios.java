@@ -578,3 +578,91 @@ public class Algoritmos_Ejercicios {
 }
 
 // Ejercicio 12 //
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- OBTENER ÚLTIMA CIFRA DE UN NÚMERO ---");
+
+        // Solicitamos el número entero //
+        System.out.print("Ingrese un número entero: ");
+        int numero = lector.nextInt();
+
+        // El operador módulo % 10 nos da siempre la última cifra //
+        int ultimaCifra = Math.abs(numero) % 10;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("La última cifra del número es: " + ultimaCifra);
+
+        lector.close();
+    }
+}
+
+// Ejercicio 13 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CONVERSIÓN DE CENTÍMETROS A PULGADAS ---");
+
+        // Solicitamos la medida en centímetros //
+        System.out.print("Ingrese la medida en centímetros: ");
+        double centimetros = lector.nextDouble();
+
+        // Aplicamos la fórmula: Pulg = cm / 2.54 //
+        double pulgadas = centimetros / 2.54;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println(centimetros + " cm equivalen a: " + pulgadas + " pulgadas.");
+
+        lector.close();
+    }
+}
+
+
+// Ejercicio 14 // 
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CONVERSIÓN DE SEGUNDOS A HORAS, MINUTOS Y SEGUNDOS ---");
+
+        // Solicitamos la cantidad total de segundos //
+        System.out.print("Ingrese el tiempo en segundos: ");
+        int totalSegundos = lector.nextInt();
+
+        // Calculamos las horas, minutos y segundos restantes //
+        int horas = totalSegundos / 3600;
+        int minutos = (totalSegundos % 3600) / 60;
+        int segundos = totalSegundos % 60;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println(totalSegundos + " segundos equivalen a: " 
+                + horas + " horas, " 
+                + minutos + " minutos y " 
+                + segundos + " segundos.");
+
+        lector.close();
+    }
+}
+
