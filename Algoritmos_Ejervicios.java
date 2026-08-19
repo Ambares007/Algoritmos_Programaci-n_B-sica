@@ -409,21 +409,18 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CONVERSIÓN DE MILLAS MARINAS A METROS ---");
-
         // Solicitamos la distancia en millas marinas //
-        System.out.print("Ingrese la distancia en millas marinas: ");
-        double millasMarinas = lector.nextDouble();
+        System.out.print("Distancia en millas marinas: ");
+        double millas = lector.nextDouble();
 
         // Aplicamos la fórmula: Metros = Millas Marinas * 1852 //
-        double metros = millasMarinas * 1852;
+        double metros = millas * 1852;
 
-        System.out.println("\n--- RESULTADO ---");
-        System.out.println(millasMarinas + " millas marinas equivalen a: " + metros + " metros.");
+        System.out.println(millas + " millas marinas equivalen a " + metros + " metros.");
 
         lector.close();
     }
