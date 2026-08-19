@@ -71,29 +71,26 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- SEPARAR DÍGITOS Y ELEVAR PRIMERO Y ÚLTIMO AL CUADRADO ---");
-
         // Solicitamos al usuario el número entero de 5 dígitos //
-        System.out.print("Ingrese un número entero positivo de 5 dígitos: ");
+        System.out.print("Ingrese un número de 5 dígitos: ");
         int numero = lector.nextInt();
 
         // Extraemos el primer dígito (dividiendo entre 10000) //
-        int primerDigito = numero / 10000;
+        int primero = numero / 10000;
 
         // Extraemos el último dígito (usando el residuo de 10) //
-        int ultimoDigito = numero % 10;
+        int ultimo = numero % 10;
 
-        // Elevamos al cuadrado el primer y el último dígito //
-        int primerAlCuadrado = primerDigito * primerDigito;
-        int ultimoAlCuadrado = ultimoDigito * ultimoDigito;
+        // Elevamos al cuadrado multiplicando el número por sí mismo //
+        int primeroCuadrado = primero * primero;
+        int ultimoCuadrado = ultimo * ultimo;
 
-        System.out.println("\n--- RESULTADO ---");
-        System.out.println("El primer dígito es: " + primerDigito + " | Elevado al cuadrado es: " + primerAlCuadrado);
-        System.out.println("El último dígito es: " + ultimoDigito + " | Elevado al cuadrado es: " + ultimoAlCuadrado);
+        System.out.println("Primer dígito: " + primero + " → al cuadrado: " + primeroCuadrado);
+        System.out.println("Último dígito: " + ultimo + " → al cuadrado: " + ultimoCuadrado);
 
         lector.close();
     }
