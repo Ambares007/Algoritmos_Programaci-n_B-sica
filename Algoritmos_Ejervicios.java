@@ -277,3 +277,47 @@ public class Algoritmos_Ejercicios {
 }
 
 
+// Ejercicio 3 // 
+
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DE NOTA MÍNIMA EN EL TERCER CORTE (UdeC) ---");
+
+        // Solicitamos las notas del primer y segundo corte //
+        System.out.print("Ingrese la nota del primer corte (20%): ");
+        double corte1 = lector.nextDouble();
+
+        System.out.print("Ingrese la nota del segundo corte (20%): ");
+        double corte2 = lector.nextDouble();
+
+        // Calculamos el acumulado de los dos primeros cortes //
+        double acumulado20 = (corte1 * 0.20) + (corte2 * 0.20);
+
+        // La nota mínima total requerida es 3.0 //
+        // Fórmula: (3.0 - acumuladoActual) / 0.60 //
+        double notaNecesaria = (3.0 - acumulado20) / 0.60;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("Acumulado actual (40%): " + acumulado20);
+
+        // Verificamos si es posible obtener la nota o si ya aprobó //
+        if (notaNecesaria <= 0) {
+            System.out.println("¡Ya aprobaste la asignatura! Necesitas un 0.0 en el tercer corte.");
+        } else if (notaNecesaria > 5.0) {
+            System.out.println("Necesitarías sacar " + notaNecesaria + ", por lo que no es posible alcanzar el 3.0.");
+        } else {
+            System.out.println("Para aprobar con 3.0, necesitas sacar mínimo en el 60%: " + notaNecesaria);
+        }
+
+        lector.close();
+    }
+}
