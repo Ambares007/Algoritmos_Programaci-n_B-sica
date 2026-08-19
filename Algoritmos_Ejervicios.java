@@ -556,21 +556,18 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CONVERSIÓN DE CENTÍMETROS A PULGADAS ---");
-
         // Solicitamos la medida en centímetros //
-        System.out.print("Ingrese la medida en centímetros: ");
+        System.out.print("Medida en centímetros: ");
         double centimetros = lector.nextDouble();
 
         // Aplicamos la fórmula: Pulg = cm / 2.54 //
         double pulgadas = centimetros / 2.54;
 
-        System.out.println("\n--- RESULTADO ---");
-        System.out.println(centimetros + " cm equivalen a: " + pulgadas + " pulgadas.");
+        System.out.println(centimetros + " cm equivalen a " + pulgadas + " pulgadas.");
 
         lector.close();
     }
