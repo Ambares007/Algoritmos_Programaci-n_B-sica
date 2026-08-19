@@ -464,14 +464,12 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CÁLCULO DEL VALOR DEL IVA ---");
-
         // Solicitamos el precio del artículo //
-        System.out.print("Ingrese el precio del artículo: ");
+        System.out.print("Precio del artículo: ");
         double precio = lector.nextDouble();
 
         // Calculamos el valor del IVA (19% = 0.19) //
@@ -480,9 +478,8 @@ public class Algoritmos_Ejercicios {
         // Calculamos el precio total con IVA incluido //
         double precioTotal = precio + valorIva;
 
-        System.out.println("\n--- RESULTADO ---");
-        System.out.println("El valor pagado solo por concepto de IVA (19%) es: $" + valorIva);
-        System.out.println("El precio total del artículo con IVA es: $" + precioTotal);
+        System.out.println("Valor del IVA (19%): $" + valorIva);
+        System.out.println("Precio total con IVA: $" + precioTotal);
 
         lector.close();
     }
