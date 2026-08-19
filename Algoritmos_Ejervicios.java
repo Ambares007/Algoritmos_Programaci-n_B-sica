@@ -106,11 +106,9 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
-
-        System.out.println("--- CONVERSIÓN DE DÉCADAS A DÍAS ---");
 
         // Solicitamos al usuario la cantidad de décadas //
         System.out.print("Ingrese la cantidad de décadas: ");
@@ -119,8 +117,7 @@ public class Algoritmos_Ejercicios {
         // Aplicamos la fórmula: 1 década = 10 años, 1 año = 365 días //
         double dias = decadas * 10 * 365;
 
-        System.out.println("\n--- RESULTADO ---");
-        System.out.println(decadas + " década(s) equivalen a: " + dias + " días.");
+        System.out.println(decadas + " década(s) equivalen a " + dias + " días.");
 
         lector.close();
     }
