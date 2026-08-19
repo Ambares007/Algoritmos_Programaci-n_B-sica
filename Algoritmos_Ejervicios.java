@@ -639,20 +639,17 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CÁLCULO DEL ÁREA DE UN CÍRCULO ---");
-
         // Solicitamos el radio del círculo //
-        System.out.print("Ingrese el radio del círculo: ");
+        System.out.print("Radio del círculo: ");
         double radio = lector.nextDouble();
 
-        // Aplicamos la fórmula: Área = PI * radio^2 //
-        double area = Math.PI * Math.pow(radio, 2);
+        // Aplicamos la fórmula: Área = PI * radio * radio //
+        double area = Math.PI * radio * radio;
 
-        System.out.println("\n--- RESULTADO ---");
         System.out.println("El área del círculo es: " + area);
 
         lector.close();
