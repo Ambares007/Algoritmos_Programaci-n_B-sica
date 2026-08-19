@@ -229,23 +229,20 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CÁLCULO DEL VALOR DE HORA TRABAJADA ---");
-
         // Solicitamos el salario total mensual y las horas trabajadas //
-        System.out.print("Ingrese el salario total mensual: ");
+        System.out.print("Salario total mensual: ");
         double salarioTotal = lector.nextDouble();
 
-        System.out.print("Ingrese el número de horas trabajadas: ");
-        double horasTrabajadas = lector.nextDouble();
+        System.out.print("Horas trabajadas: ");
+        double horas = lector.nextDouble();
 
         // Aplicamos la fórmula: Valor Hora = Salario Total / Horas Trabajadas //
-        double valorHora = salarioTotal / horasTrabajadas;
+        double valorHora = salarioTotal / horas;
 
-        System.out.println("\n--- RESULTADO ---");
         System.out.println("El valor de una hora trabajada es: $" + valorHora);
 
         lector.close();
