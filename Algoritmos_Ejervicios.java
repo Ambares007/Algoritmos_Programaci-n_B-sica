@@ -321,3 +321,69 @@ public class Algoritmos_Ejercicios {
         lector.close();
     }
 }
+
+// Ejercicio 4 //
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DEL ÁREA DE UN TRIÁNGULO ---");
+
+        // Solicitamos la base y la altura //
+        System.out.print("Ingrese la base del triángulo: ");
+        double base = lector.nextDouble();
+
+        System.out.print("Ingrese la altura del triángulo: ");
+        double altura = lector.nextDouble();
+
+        // Aplicamos la fórmula: Área = (base * altura) / 2 //
+        double area = (base * altura) / 2;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El área del triángulo es: " + area);
+
+        lector.close();
+    }
+}
+
+// Ejercicio 5 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DEL PERÍMETRO DE UN TRIÁNGULO ---");
+
+        // Solicitamos los tres lados del triángulo //
+        System.out.print("Ingrese el primer lado: ");
+        double lado1 = lector.nextDouble();
+
+        System.out.print("Ingrese el segundo lado: ");
+        double lado2 = lector.nextDouble();
+
+        System.out.print("Ingrese el tercer lado: ");
+        double lado3 = lector.nextDouble();
+
+        // Aplicamos la fórmula: Perímetro = lado1 + lado2 + lado3 //
+        double perimetro = lado1 + lado2 + lado3;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El perímetro del triángulo es: " + perimetro);
+
+        lector.close();
+    }
+}
+
