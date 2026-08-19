@@ -359,21 +359,18 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CONVERSIÓN DE CELSIUS A FAHRENHEIT ---");
-
         // Solicitamos los grados Celsius //
-        System.out.print("Ingrese los grados Celsius: ");
+        System.out.print("Grados Celsius: ");
         double celsius = lector.nextDouble();
 
         // Aplicamos la fórmula: Fahrenheit = (Celsius * 9/5) + 32 //
         double fahrenheit = (celsius * 9 / 5) + 32;
 
-        System.out.println("\n--- RESULTADO ---");
-        System.out.println(celsius + " °C equivalen a: " + fahrenheit + " °F");
+        System.out.println(celsius + " °C equivalen a " + fahrenheit + " °F");
 
         lector.close();
     }
