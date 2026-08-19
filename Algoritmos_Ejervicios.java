@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejervicios {
 
-    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, 
-    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos dwe Java. //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
-        // Solicitamos al usuario la longitud de un lado //
+        // Se utiliza dentro de este método, una petición al usuario para que ingrese la longitud del hexágono, con el fin de tener una base sólida.//
         System.out.print("Ingrese la longitud de un lado del hexágono: ");
         double lado = lector.nextDouble();
 
@@ -32,10 +32,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+   // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Definimos el valor fijo por hora //
@@ -69,10 +70,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos al usuario el número entero de 5 dígitos //
@@ -104,10 +106,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos al usuario la cantidad de décadas //
@@ -131,10 +134,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos los datos requeridos por la fórmula //
@@ -162,10 +166,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos la edad de la persona //
@@ -191,10 +196,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos el valor de la hora y las horas trabajadas //
@@ -227,10 +233,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos el salario total mensual y las horas trabajadas //
@@ -257,10 +264,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos las notas del primer y segundo corte //
@@ -298,10 +306,10 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
-    public static void main(String[] args) {
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //// El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos la base y la altura //
@@ -326,10 +334,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos los tres lados del triángulo //
@@ -357,10 +366,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos los grados Celsius //
@@ -382,10 +392,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos los grados Fahrenheit //
@@ -407,10 +418,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos la distancia en millas marinas //
@@ -433,10 +445,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos el precio original y el precio pagado //
@@ -462,10 +475,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos el precio del artículo //
@@ -491,10 +505,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos los dos números enteros //
@@ -529,10 +544,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos el número entero //
@@ -554,10 +570,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos la medida en centímetros //
@@ -579,10 +596,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos la cantidad total de segundos //
@@ -609,10 +627,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos el valor unitario y la cantidad de artículos //
@@ -637,10 +656,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos el radio del círculo //
@@ -663,10 +683,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos los dos lados del rectángulo //
@@ -694,10 +715,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos la longitud del lado del cuadrado //
@@ -721,10 +743,11 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejercicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, //
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos de Java. //
     public static void main(String[] args) {
 
-        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        // Creamos un objeto "Scanner" para el ingreso de datos en el  sistema y así poder saber cuál será el objeto. //
         Scanner lector = new Scanner(System.in);
 
         // Solicitamos los valores de x, y, z //
