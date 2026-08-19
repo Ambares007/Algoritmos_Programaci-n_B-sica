@@ -724,3 +724,38 @@ public class Algoritmos_Ejercicios {
         lector.close();
     }
 }
+
+
+// Ejercicio 17 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DE PERÍMETRO Y ÁREA DE UN RECTÁNGULO ---");
+
+        // Solicitamos los dos lados del rectángulo //
+        System.out.print("Ingrese el valor del lado a (base/ancho): ");
+        double ladoA = lector.nextDouble();
+
+        System.out.print("Ingrese el valor del lado b (altura/largo): ");
+        double ladoB = lector.nextDouble();
+
+        // Aplicamos las fórmulas: P = 2*a + 2*b y A = a*b //
+        double perimetro = (2 * ladoA) + (2 * ladoB);
+        double area = ladoA * ladoB;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El perímetro del rectángulo es: " + perimetro);
+        System.out.println("El área del rectángulo es: " + area);
+
+        lector.close();
+    }
+}
+
