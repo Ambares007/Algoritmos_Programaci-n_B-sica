@@ -435,25 +435,22 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CÁLCULO DE PORCENTAJE DE DESCUENTO ---");
-
         // Solicitamos el precio original y el precio pagado //
-        System.out.print("Ingrese el precio original (tarifa): ");
+        System.out.print("Precio original (tarifa): ");
         double precioTarifa = lector.nextDouble();
 
-        System.out.print("Ingrese el precio final pagado: ");
+        System.out.print("Precio final pagado: ");
         double precioPagado = lector.nextDouble();
 
         // Calculamos la diferencia del descuento y luego el porcentaje //
         double descuentoDinero = precioTarifa - precioPagado;
-        double porcentajeDescuento = (descuentoDinero / precioTarifa) * 100;
+        double porcentaje = (descuentoDinero / precioTarifa) * 100;
 
-        System.out.println("\n--- RESULTADO ---");
-        System.out.println("El descuento aplicado fue del: " + porcentajeDescuento + "%");
+        System.out.println("El descuento aplicado fue del: " + porcentaje + "%");
 
         lector.close();
     }
