@@ -3,27 +3,22 @@ import java.util.Scanner;
 
 public class Algoritmos_Ejervicios {
 
-    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    // El método 'main' es el punto de entrada, con base a lo investigado, sin este Método, 
+    // el computador o programa no sabe por dónde empezar. Es lo que Java ejecuta primero para luego abrir paso a los demás métodos dwe Java. //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CÁLCULO DEL PERÍMETRO DE UN HEXÁGONO REGULAR ---");
-
-        // Solicitamos al usuario la longitud de un lado//
-        System.out.print("Ingrese la longitud de uno de los lados: ");
-        
-        // Leemos el número decimal ingresado por el usuario //
+        // Solicitamos al usuario la longitud de un lado //
+        System.out.print("Ingrese la longitud de un lado del hexágono: ");
         double lado = lector.nextDouble();
 
-        
-         //Un polígono regular de 6 lados (hexágono) tiene todos sus lados iguales.//
-         // Aplicamos la fórmula requerida: P = 6 * lado//
+        // Un hexágono regular tiene 6 lados iguales //
+        // Aplicamos la fórmula: P = 6 * lado //
         double perimetro = 6 * lado;
 
-        System.out.println("\n--- RESULTADO ---");
-        System.out.println("El perímetro del polígono de 6 lados es: " + perimetro);
+        System.out.println("El perímetro es: " + perimetro);
 
         lector.close();
     }
@@ -39,37 +34,34 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CÁLCULO DE NÓMINA SEMANAL (EMPRESA XYZ) ---");
-
         // Definimos el valor fijo por hora //
         double valorHora = 1000.0;
-        double totalPagadoTodos = 0.0;
+        double totalPagado = 0.0;
 
         // Bucle para pedir las horas de los 5 obreros //
         for (int i = 1; i <= 5; i++) {
-            
+
             // Solicitamos al usuario el número de horas trabajadas //
-            System.out.print("Ingrese el número de horas trabajadas por el obrero " + i + ": ");
-            double horasTrabajadas = lector.nextDouble();
+            System.out.print("Horas trabajadas por el obrero " + i + ": ");
+            double horas = lector.nextDouble();
 
             // Calcular el valor a pagar por cada obrero //
-            double pagoObrero = horasTrabajadas * valorHora;
-
-            System.out.println("El valor a pagar al obrero " + i + " es: $" + pagoObrero + " pesos\n");
+            double pago = horas * valorHora;
+            System.out.println("Pago al obrero " + i + ": $" + pago);
 
             // Acumulamos para calcular el valor total pagado a todos los obreros //
-            totalPagadoTodos = totalPagadoTodos + pagoObrero;
+            totalPagado = totalPagado + pago;
         }
 
-        System.out.println("--- RESULTADO FINAL ---");
-        System.out.println("El valor total pagado a todos los obreros es: $" + totalPagadoTodos + " pesos");
+        System.out.println("Total pagado a todos los obreros: $" + totalPagado);
 
         lector.close();
     }
+}
     
 // Ejercicio 3 // 
 
