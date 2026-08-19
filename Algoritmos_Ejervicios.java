@@ -666,3 +666,33 @@ public class Algoritmos_Ejercicios {
     }
 }
 
+// Ejercicio 15 //
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DEL VALOR TOTAL A PAGAR ---");
+
+        // Solicitamos el valor unitario y la cantidad de artículos //
+        System.out.print("Ingrese el valor unitario del artículo: ");
+        double valorUnidad = lector.nextDouble();
+
+        System.out.print("Ingrese la cantidad de artículos a llevar: ");
+        int cantidad = lector.nextInt();
+
+        // Aplicamos la fórmula: Total = Valor Unitario * Cantidad //
+        double valorTotal = valorUnidad * cantidad;
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("El valor total a pagar es: $" + valorTotal);
+
+        lector.close();
+    }
+}
