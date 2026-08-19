@@ -153,7 +153,7 @@ public class Algoritmos_Ejercicios {
 
         System.out.println("--- CÁLCULO DE MASA DE AIRE ---");
 
-        // Solicitamos al usuario la presión, el volumen y la temperatura //
+        // Solicitamos los datos requeridos por la fórmula //
         System.out.print("Ingrese la presión: ");
         double presion = lector.nextDouble();
 
@@ -167,9 +167,8 @@ public class Algoritmos_Ejercicios {
         double masa = (presion * volumen) / (0.37 * (temperatura + 460));
 
         System.out.println("\n--- RESULTADO ---");
-        System.out.println("La masa de aire es: " + masa);
+        System.out.println("La masa de aire calculada es: " + masa);
 
         lector.close();
     }
 }
-
