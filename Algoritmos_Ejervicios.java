@@ -581,14 +581,12 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CONVERSIÓN DE SEGUNDOS A HORAS, MINUTOS Y SEGUNDOS ---");
-
         // Solicitamos la cantidad total de segundos //
-        System.out.print("Ingrese el tiempo en segundos: ");
+        System.out.print("Tiempo en segundos: ");
         int totalSegundos = lector.nextInt();
 
         // Calculamos las horas, minutos y segundos restantes //
@@ -596,10 +594,9 @@ public class Algoritmos_Ejercicios {
         int minutos = (totalSegundos % 3600) / 60;
         int segundos = totalSegundos % 60;
 
-        System.out.println("\n--- RESULTADO ---");
-        System.out.println(totalSegundos + " segundos equivalen a: " 
-                + horas + " horas, " 
-                + minutos + " minutos y " 
+        System.out.println(totalSegundos + " segundos equivalen a "
+                + horas + " horas, "
+                + minutos + " minutos y "
                 + segundos + " segundos.");
 
         lector.close();
