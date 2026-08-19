@@ -136,3 +136,40 @@ public class Algoritmos_Ejercicios {
         lector.close();
     }
 }
+
+
+
+// Ejercicio 5 // 
+
+import java.util.Scanner;
+
+public class Algoritmos_Ejercicios {
+
+    // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
+    public static void main(String[] args) {
+        
+        // Creamos un objeto Scanner asociado a la entrada del sistema //
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("--- CÁLCULO DE MASA DE AIRE ---");
+
+        // Solicitamos al usuario la presión, el volumen y la temperatura //
+        System.out.print("Ingrese la presión: ");
+        double presion = lector.nextDouble();
+
+        System.out.print("Ingrese el volumen: ");
+        double volumen = lector.nextDouble();
+
+        System.out.print("Ingrese la temperatura: ");
+        double temperatura = lector.nextDouble();
+
+        // Aplicamos la fórmula: masa = (presión * volumen) / (0.37 * (temperatura + 460)) //
+        double masa = (presion * volumen) / (0.37 * (temperatura + 460));
+
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("La masa de aire es: " + masa);
+
+        lector.close();
+    }
+}
+
