@@ -328,26 +328,23 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CÁLCULO DEL PERÍMETRO DE UN TRIÁNGULO ---");
-
         // Solicitamos los tres lados del triángulo //
-        System.out.print("Ingrese el primer lado: ");
+        System.out.print("Primer lado: ");
         double lado1 = lector.nextDouble();
 
-        System.out.print("Ingrese el segundo lado: ");
+        System.out.print("Segundo lado: ");
         double lado2 = lector.nextDouble();
 
-        System.out.print("Ingrese el tercer lado: ");
+        System.out.print("Tercer lado: ");
         double lado3 = lector.nextDouble();
 
         // Aplicamos la fórmula: Perímetro = lado1 + lado2 + lado3 //
         double perimetro = lado1 + lado2 + lado3;
 
-        System.out.println("\n--- RESULTADO ---");
         System.out.println("El perímetro del triángulo es: " + perimetro);
 
         lector.close();
