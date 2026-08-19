@@ -193,21 +193,19 @@ public class Algoritmos_Ejercicios {
 
     // El método 'main' es el punto de entrada. Es lo que Java ejecuta primero //
     public static void main(String[] args) {
-        
+
         // Creamos un objeto Scanner asociado a la entrada del sistema //
         Scanner lector = new Scanner(System.in);
 
-        System.out.println("--- CÁLCULO DE SALARIO Y RETENCIÓN (PROSEGUR) ---");
-
         // Solicitamos el valor de la hora y las horas trabajadas //
-        System.out.print("Ingrese el valor de la hora: ");
+        System.out.print("Valor de la hora: ");
         double valorHora = lector.nextDouble();
 
-        System.out.print("Ingrese el número de horas trabajadas: ");
-        double horasTrabajadas = lector.nextDouble();
+        System.out.print("Horas trabajadas: ");
+        double horas = lector.nextDouble();
 
         // Salario Total = Horas trabajadas * Valor por hora //
-        double salarioTotal = horasTrabajadas * valorHora;
+        double salarioTotal = horas * valorHora;
 
         // Retención en la fuente = 5% del salario total (0.05) //
         double retencion = salarioTotal * 0.05;
@@ -215,10 +213,9 @@ public class Algoritmos_Ejercicios {
         // Salario Neto = Salario Total - Retención //
         double salarioNeto = salarioTotal - retencion;
 
-        System.out.println("\n--- RESULTADO ---");
         System.out.println("Salario Total: $" + salarioTotal);
-        System.out.println("Retención en la fuente (5%): $" + retencion);
-        System.out.println("Salario Neto a pagar: $" + salarioNeto);
+        System.out.println("Retención (5%): $" + retencion);
+        System.out.println("Salario Neto: $" + salarioNeto);
 
         lector.close();
     }
